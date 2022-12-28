@@ -1,10 +1,11 @@
 package com.example.localeibra;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class detailShirt extends AppCompatActivity {
@@ -28,7 +29,8 @@ public class detailShirt extends AppCompatActivity {
 
         //foto pakaian
         Bundle bundle = getIntent().getExtras();
-        fotoPakaian = bundle.getInt(String.valueOf("foto_pakaian"));
+        fotoPakaian = bundle.getInt("foto_pakaian");
+        //fotoPakaian = bundle.getInt(String.valueOf("foto_pakaian"));
         detGambar.setImageResource(fotoPakaian);
 
         getInputExtra();
@@ -49,6 +51,11 @@ public class detailShirt extends AppCompatActivity {
         detJenis.setText(namaJenis);
         detPrice.setText(namaPrice);
         detDesc.setText(namaDesc);
+    }
+
+    public void addCart(View view) {
+        Intent it = new Intent(detailShirt.this, FormData.class );
+        startActivity(it);
     }
 
 

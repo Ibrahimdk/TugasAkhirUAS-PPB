@@ -20,7 +20,7 @@ public class tshirtAdapter extends RecyclerView.Adapter<tshirtAdapter.ViewHolder
 
     public tshirtAdapter(ArrayList<tshirtclass> listShirt) {this.listShirt = listShirt;}
     private ArrayList<tshirtclass> listShirt;
-
+    //adapter untuk recyclerview
     @NonNull
     @Override
     public tshirtAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {

@@ -19,4 +19,9 @@ public class oopslogin extends AppCompatActivity {
         Intent it = new Intent(oopslogin.this, register.class );
         startActivity(it);
     }
+
+    public void loginbtn(View view) {
+        Intent it = new Intent(oopslogin.this, loginact.class );
+        startActivity(it);
+    }
 }

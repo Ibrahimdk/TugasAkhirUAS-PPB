@@ -190,6 +190,7 @@
             android:backgroundTint="#FFFFFF"
             android:fontFamily="@font/monsblack"
             android:letterSpacing="0.01"
+            android:onClick="addCart"
             android:text="add to cart"
             android:textAllCaps="false"
             android:textColor="#B09B71"

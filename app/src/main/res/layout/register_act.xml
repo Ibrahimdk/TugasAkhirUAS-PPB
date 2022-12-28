@@ -60,7 +60,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView8"
+                    android:id="@+id/banner"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/monsblack"
@@ -98,6 +98,7 @@
                     android:textSize="12dp" />
 
                 <EditText
+                    android:id="@+id/regUser"
                     android:layout_width="match_parent"
                     android:layout_height="45dp"
                     android:background="@drawable/custom_input"
@@ -128,6 +129,7 @@
                     android:textSize="12dp" />
 
                 <EditText
+                    android:id="@+id/regEmail"
                     android:layout_width="match_parent"
                     android:layout_height="45dp"
                     android:background="@drawable/custom_input"
@@ -158,6 +160,7 @@
                     android:textSize="12dp" />
 
                 <EditText
+                    android:id="@+id/regPassword"
                     android:layout_width="match_parent"
                     android:layout_height="45dp"
                     android:background="@drawable/custom_input"
@@ -180,20 +183,36 @@
                 android:backgroundTint="#5D7E5F"
                 android:fontFamily="@font/monsblack"
                 android:letterSpacing="0.01"
-                android:onClick="registerbtn"
                 android:text="register"
                 android:textAllCaps="false"
                 android:textSize="20dp"
                 app:cornerRadius="15dp" />
 
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:fontFamily="@font/monsreguler"
-                android:text="Oops! You don't have any account. Please Register."
-                android:textAlignment="center" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="50dp"
+                android:textAlignment="center">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/monsreguler"
+                    android:text="Have any account?"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/txtLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/monsbold"
+                    android:text=" Login"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
